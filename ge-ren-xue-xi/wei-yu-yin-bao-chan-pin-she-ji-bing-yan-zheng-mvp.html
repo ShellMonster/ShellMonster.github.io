@@ -1,0 +1,950 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="【增长黑客】为语音包产品设计并验证MVP, ASO优化，App推广渠道，积分墙打量，机刷，关键词优化，榜单优化。">
+    <meta name="description" content="为“语音包”产品设计并验证MVP一、确定目标用户:1，用户画像：1.1，整合数据：①，百度搜索情况：　　PC端搜索情况如下：
+　　移动端搜索情况如下：
+　　上方为“语音包”搜索后出现的结果，从圈点处基本可以看到，用户潜在的几个需求：　　a，">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>【增长黑客】为语音包产品设计并验证MVP | GeekASO</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">GeekASO</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">GeekASO</div>
+        <div class="logo-desc">
+            
+            ASO优化，App推广渠道，积分墙打量，机刷，关键词优化，榜单优化。
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ShellMonster" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ShellMonster" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewbox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        【增长黑客】为语音包产品设计并验证MVP
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/数据分析/" target="_blank">
+                                <span class="chip bg-color">数据分析</span>
+                            </a>
+                        
+                            <a href="/tags/mvp/" target="_blank">
+                                <span class="chip bg-color">mvp</span>
+                            </a>
+                        
+                            <a href="/tags/增长黑客/" target="_blank">
+                                <span class="chip bg-color">增长黑客</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/个人学习/" class="post-category" target="_blank">
+                                个人学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2018-07-10
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        3.3k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        11 分
+                    </div>
+                    
+                
+				
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="为“语音包”产品设计并验证MVP"><a href="#为“语音包”产品设计并验证MVP" class="headerlink" title="为“语音包”产品设计并验证MVP"></a>为“语音包”产品设计并验证MVP</h1><h1 id="一、确定目标用户"><a href="#一、确定目标用户" class="headerlink" title="一、确定目标用户:"></a>一、确定目标用户:</h1><h2 id="1，用户画像："><a href="#1，用户画像：" class="headerlink" title="1，用户画像："></a>1，用户画像：</h2><h3 id="1-1，整合数据："><a href="#1-1，整合数据：" class="headerlink" title="1.1，整合数据："></a>1.1，整合数据：</h3><h4 id="①，百度搜索情况："><a href="#①，百度搜索情况：" class="headerlink" title="①，百度搜索情况："></a>①，百度搜索情况：</h4><p>　　PC端搜索情况如下：</p>
+<p><img src="http://image.asoheikeji.com/15312442231823.jpg" alt="百度搜索情况"><br><img src="http://image.asoheikeji.com/15312442930547.jpg" alt="搜索下拉"><br>　　移动端搜索情况如下：<br><img src="http://image.asoheikeji.com/15312446465002.jpg" alt="移动端"></p>
+<p>　　上方为“语音包”搜索后出现的结果，从圈点处基本可以看到，用户潜在的几个需求：<br>　　a，收藏语音包；因为有些搜索情况表示用户想收听类似“明星语音包”，“游戏语音包”，“动漫语音包”之类的；<br>　　b，使用语音包软件，在游戏中用语音包与游戏好友互动；这方面吃鸡游戏表现比较明显；<br>　　c，想要用语音包丰富日常生活，例如“电话恶搞”，“微信语音”等；</p>
+<p>####　②，百度指数情况：<br>　　此处由于“语音包”这个关键词没用开放数据，所以以搜索结果中出现最多的“李云龙语音包”来代替；<br>　　未出现的情况笔者在复查了“搜狗指数”后得出结果，并非搜索量不大，而是百度单方面并没有开放相关数据。<br><img src="http://image.asoheikeji.com/15312449628913.jpg" alt="搜狗指数情况"><br><img src="http://image.asoheikeji.com/15312448718993.jpg" alt="百度指数情况"><br><img src="http://image.asoheikeji.com/15312454406487.jpg" alt="舆情监测"><br><img src="http://image.asoheikeji.com/15312455043637.jpg" alt="最早时间情况"><br><img src="http://image.asoheikeji.com/15312462529243.jpg" alt="2月13日搜索结果"><br><img src="http://image.asoheikeji.com/15312462139821.jpg" alt="搜索结果"><br><img src="http://image.asoheikeji.com/15312463030403.jpg" alt="哔哩哔哩"><br>　　查看2月13日前后搜索记录，基本了解前后话题爆发缘由；一群吃鸡游戏爱好者，在游戏里遇到了用“李云龙语音包”与之对话的坡主，并且坡主在游戏后制作视频上传网络，然后此视频瞬间在网络热烈传播，包括“微博”，“微信”，“视频站”，”论坛“等，于是一批用户开始在网络寻求相关“<strong>语音包</strong>”及“<strong>语音包软件</strong>”。</p>
+<p>####　③，第三方数据：<br>　　目前市面上已有几款上线的应用，现选取一个摘取用户画像来分析；<br><img src="http://image.asoheikeji.com/15312469566432.jpg" alt="很皮画像"></p>
+<h3 id="1-2，总结用户画像："><a href="#1-2，总结用户画像：" class="headerlink" title="1.2，总结用户画像："></a>1.2，总结用户画像：</h3><p>　　根据以上数据分析显示，用户以年轻群体24岁及以下用户群体为主；并且男女比例为7比3。由此基本可以判断用户大致画像，下方列举部分典型用户。<br>　　a，科科，性别男，20岁，目前在一所大学上大二，闲暇时间爱和朋友们一起玩吃鸡游戏，平时也会看一些吃鸡方面的有趣视频和直播，有天刷B站发现up主在推荐关于“<a href="https://www.bilibili.com/video/av19496132" target="_blank" rel="noopener">吃鸡方面用语音包</a>”的视频，于是开始了解相关内容，包括pc端语音包软件，同时移动端的软件也开始使用，偶尔给朋友发些恶搞语音；<br>　　b，花花，性别女，19岁，大一学生，二次元人群，声控，平常喜欢逛B站看视频，通过QQ空间推荐看到相关语音包内容，开始了解并下载了某款语音包软件收听自己喜欢的坡主语音。<br>　　c，贝贝，性别男，24岁，大四学生，游戏患者，喜欢了解一些有趣的事物及内容，当看到李云龙相关视频后迅速开始收集相关语音包资料，并且整理出来给大家分享。</p>
+<h2 id="2，确定目标用户："><a href="#2，确定目标用户：" class="headerlink" title="2，确定目标用户："></a>2，确定目标用户：</h2><p>　　根据以上数据分析及用户画像描述，来确定以上用户群体，哪些可以作为App的目标用户：<br>　　有需要浏览，查看，收听语音包的用户，包括典型用户“花花”，“科科”，“贝贝”等均可作为App的目标用户；但是用户群体需要根据功能情况细分，根据用户搜索行为及已经上线的产品来看，部分用户是希望能通过“移动端语音包软件”来实现在游戏中使用“语音包”娱乐的，但是目前来说因为移动端功能限制的问题无法做到。(根据用户搜索行为及用户对于已上线产品评价得出)</p>
+<h1 id="二、发现未被满足的需求："><a href="#二、发现未被满足的需求：" class="headerlink" title="二、发现未被满足的需求："></a>二、发现未被满足的需求：</h1><h2 id="1，根据用户评价产品了解："><a href="#1，根据用户评价产品了解：" class="headerlink" title="1，根据用户评价产品了解："></a>1，根据用户评价产品了解：</h2><p><img src="http://image.asoheikeji.com/15312485032284.jpg" alt="很皮1"><br><img src="http://image.asoheikeji.com/15312485467390.jpg" alt="很皮2"><br><img src="http://image.asoheikeji.com/15312488882736.jpg" alt="皮皮虾1"><br><img src="http://image.asoheikeji.com/15312834135553.jpg" alt="皮皮虾安卓评价1"><br>　　根据用户评价来看，iOS不满足用户需求的地方主要是没有浮窗；安卓则主要是悬浮窗的兼容问题及在游戏中播放语言包的问题，同时关于产品内部的内容丰富性也被许多用户提出说明。</p>
+<h2 id="2，根据用户需求图谱了解："><a href="#2，根据用户需求图谱了解：" class="headerlink" title="2，根据用户需求图谱了解："></a>2，根据用户需求图谱了解：</h2><p><img src="http://image.asoheikeji.com/15312955061664.jpg" alt="很皮语音包百度搜索需求图谱"><br><img src="http://image.asoheikeji.com/15312956325217.jpg" alt="李云龙语音包用户需求图谱"><br>　　从用户需求图谱情况查看了解到，大部分用户了解语音包类产品，主要需求有两方面，并且与用户评价方面比较契合；一方面是想“听语音包”，其中延伸的也包括收听其他的，比如同类型的“卢本伟语音包”，“吃鸡语音包”等，另一方面主要是想使用“语音包软件”，包括在游戏中使用，以及在线试听等。</p>
+<h2 id="3，根据用户舆情了解："><a href="#3，根据用户舆情了解：" class="headerlink" title="3，根据用户舆情了解："></a>3，根据用户舆情了解：</h2><p>　　第二类看的用户搜索需求图谱，实际上与已做出的产品和搜索词本身有关，结果会比较偏向于“语音包”本质的结果，所以现在我们来看看微博舆情呈现的情况。<br>　　关于“<strong>语音包</strong>”近7天的舆情洞察；<br><img src="http://image.asoheikeji.com/15312959696842.jpg" alt="微舆情1"><br>　　关于“李云龙语音包”近7天的舆情洞察；<br><img src="http://image.asoheikeji.com/15312962387317.jpg" alt="微舆情2"><br>　　关于“<strong>语音包</strong>”和“<strong>李云龙语音包</strong>”对比；<br><img src="http://image.asoheikeji.com/15312962809364.jpg" alt="微舆情3"><br>　　关于“<strong>语音包</strong>”和“<strong>李云龙语音包</strong>”舆情情绪对比；<br><img src="http://image.asoheikeji.com/15312963699914.jpg" alt="微舆情4"><br>　　根据舆情洞察情况显示，与”语音包“相关的用户表现出的情况大多是比较“喜悦”的情绪，例如某软件使用“语音包”功能给用户播报天气情况，以及各类其他产品通过定制化语音包来让产品丰富且更具有可玩性的情况；<br>　　而“李云龙语音包”的舆情热度相比“语音包”来说低很多，但情绪上表现出来的则是“惊奇”，这个问题根据分析舆情内容及词云情况来看，可能是因为大部分以吃鸡游戏为主的游戏用户，并没有发现“语言包”内容的可玩性，但是被其他用户挖掘出来后，引来的却是大家的叫好，同时查看“关联词”情况也能看到大部分用户表现出的是“有趣”和“好玩”的性质，但前提建立在使用“语音包”游戏或者浏览相关用了语音包游戏视频的情况下。</p>
+<h2 id="4，总结用户需求，提炼核心功能："><a href="#4，总结用户需求，提炼核心功能：" class="headerlink" title="4，总结用户需求，提炼核心功能："></a>4，总结用户需求，提炼核心功能：</h2><p>　　根据以上分析，基本可以确定的两点需求情况，分别为：<br>　　①，使用语音包收听，娱乐，分享功能；<br>　　②，使用语音包软件玩游戏，包括pc，移动端等；<br>　　<br>　　对于第二点来说，在我们了解相关开发难度和商业角度情况来看，目前并不适合做MVP测试，主要原因有几点：<br>　　a，目前iOS并不支持悬浮窗，更不用说在游戏中使用了；安卓可以支持悬浮窗，但是游戏内由于游戏的特殊性导致游戏产品开发的时候就设定好了，不能把手机内除了游戏声音外的其他声音录入，所以在这种情况下，就算能播放语音包，也是被游戏屏蔽的，也就出现了用户评价之中出现批评“语音包产品”的情况。(此处举例：手机播放音乐过程中打开吃鸡游戏，则音乐播放会自动停止。)<br>　　b，虽然pc端产品可以实现此功能(已有大部分产品做了)，但是现在互联网发展，pc端虽然能满足需求，但是并没有较好的商业模式，且就算能收费，专门做一款收费的语音包pc软件也不能较好的建立产品壁垒，也就是说，开发及验证MVP的成本在短期内会远大于收回的成本。<br>　　<br>　　所以综合上面两点情况来看，可以确定此次设计MVP的核心功能则在于做一款<strong>能播放语音包内容</strong>并且有<strong>相关转化</strong>的产品，转化包括内容付费，或者分享等。</p>
+<h1 id="三、定义价值主张："><a href="#三、定义价值主张：" class="headerlink" title="三、定义价值主张："></a>三、定义价值主张：</h1><h2 id="1，这个问题是否让人很苦恼？"><a href="#1，这个问题是否让人很苦恼？" class="headerlink" title="1，这个问题是否让人很苦恼？"></a>1，这个问题是否让人很苦恼？</h2><p>　　根据百度搜索情况显示，大部分搜索“语音包”关键词的用户，都有潜在需要下载“语音包内容”的需求，并且有部分小伙伴则直接开始在贴吧，论坛等地兜售“语音包”。<br>　　所以，综上来看，目前这个问题对于需要的人来说是比较苦恼的，整合了语音包的人不太好找到受众，想要语音包的用户又找不到比较合适的或者自己喜欢的语音包内容。(比如想听xxx的语音包)<br><img src="http://image.asoheikeji.com/15312977554394.jpg" alt="百度搜索情况"><br><img src="http://image.asoheikeji.com/15312979164948.jpg" alt="贴吧情况"></p>
+<h2 id="2，这个问题是否必须要解决？"><a href="#2，这个问题是否必须要解决？" class="headerlink" title="2，这个问题是否必须要解决？"></a>2，这个问题是否必须要解决？</h2><p>　　非必须，有这个功能，收集语音包和收听语音包会显得比较容易，并且可以通过移动端产品的功能来实现从pc端收听收集到移动端收集收听的过渡。<br>　　(没有移动端产品，那么至少iOS在这件事上是比较不好操作的，因为音乐播放器助攻音乐并没有那些语音包，且大部分用户并不了解导入iOS的方式；同时安卓端虽然能比较好导入，但是缺少分类及细化，比如歌曲和语音包混在一起，那么听歌的时候会一起播放，在只是想听歌的时候或者听语音包的时候影响视听，最后或许还要两者之间做取舍。)</p>
+<h2 id="3，这个问题是否很紧急？"><a href="#3，这个问题是否很紧急？" class="headerlink" title="3，这个问题是否很紧急？"></a>3，这个问题是否很紧急？</h2><p>　　这个问题对于需求的人来说是比较紧急的，一般用户在搜索的时候肯定是希望能立马拿到语音包或者能立马收听等，但是各个转化过程包括搜索，文件下载导入，学习使用等过程会磨掉用户的耐心，如果能有一款产品绕过这些直接来解决，那么必定是受用户青睐而下载使用的，但是用户使用过程中的转化留存情况则需要后续MVP模型的继续验证。</p>
+<h2 id="4，市面上是否有人能很好的解决问题？"><a href="#4，市面上是否有人能很好的解决问题？" class="headerlink" title="4，市面上是否有人能很好的解决问题？"></a>4，市面上是否有人能很好的解决问题？</h2><p>　　pc端已有产品，移动端已有产品“很皮语音包”及“皮皮虾语音包”；pc端产品无法解决移动端问题，此处不看。<br>　　移动端产品“很皮语音包”及”皮皮虾语音包“能解决用户的部分问题，但是并不能完全解决，主要问题两方面：<br>　　a，“很皮语音包”及“皮皮虾语音包”都于安卓端开始发展，iOS端发展迟缓，早起并没有iOS端或者说iOS端体验较差；<br>　　b，两者软件内语音包内容并不丰富，虽然满足了大部分用户的需求包括主流的“吃鸡语音包”“李云龙语音包”等，但是还有很多语音包内容并未挖掘；<br>　　<br>　　<strong>综上</strong>，我们如果要做MVP测试，则可主要在优先发力iOS和丰富内容为主；例如丰富“游戏”类人物语音包等。<br>　　<br>　　<strong>例</strong>；用定义产品价值的描述话术则为：</p>
+<blockquote>
+<p>　　我们的产品是一款内容丰富的语音包软件，它专门为觉得语音包查找困难及收集困难的用户研发，不同于电脑端的语音包产品的是它能在移动端直接播放，并且你可以尝试分享自己喜欢的语音包上传供他人收听。</p>
+</blockquote>
+<h1 id="四、设计产品的MVP："><a href="#四、设计产品的MVP：" class="headerlink" title="四、设计产品的MVP："></a>四、设计产品的MVP：</h1><h2 id="1，设计最小化可行产品："><a href="#1，设计最小化可行产品：" class="headerlink" title="1，设计最小化可行产品："></a>1，设计最小化可行产品：</h2><h3 id="1-1，确定核心功能："><a href="#1-1，确定核心功能：" class="headerlink" title="1.1，确定核心功能："></a>1.1，确定核心功能：</h3><p>　　a，播放语音包内容；<br>　　b，付费或分享解锁特定语音包；</p>
+<h2 id="2，构建MVP："><a href="#2，构建MVP：" class="headerlink" title="2，构建MVP："></a>2，构建MVP：</h2><h3 id="2-1，定义产品首要目标："><a href="#2-1，定义产品首要目标：" class="headerlink" title="2.1，定义产品首要目标："></a>2.1，定义产品首要目标：</h3><p>　　让用户能在这个产品上随时随地收听语音包内容。</p>
+<h3 id="2-2，定义产品用户行为流："><a href="#2-2，定义产品用户行为流：" class="headerlink" title="2.2，定义产品用户行为流："></a>2.2，定义产品用户行为流：</h3><p>####　　用户行为流图如下：<br>　　①用户下载注册产品后开始收听语音包；<br>　　②用户收听后想解锁其他部分语音包，选项“分享”或者“付费解锁”；<br>　　③分享后引导其他用户下载体验；<br>　　④整个体系开始以下方用户流程图方式循环；<br><img src="http://image.asoheikeji.com/15313011897981.jpg" alt="用户行为流"></p>
+<h3 id="2-3，罗列产品功能："><a href="#2-3，罗列产品功能：" class="headerlink" title="2.3，罗列产品功能："></a>2.3，罗列产品功能：</h3><p><img src="http://image.asoheikeji.com/15313034229791.jpg" alt="罗列产品功能"></p>
+<h3 id="2-4，对功能优先级排序："><a href="#2-4，对功能优先级排序：" class="headerlink" title="2.4，对功能优先级排序："></a>2.4，对功能优先级排序：</h3><p>　　关于功能优先级排序可查看上图，此处不展示排序过程，直接呈现需要做的功能即为有“<strong>1</strong>”标记的。</p>
+<h3 id="2-5，构建最终功能集合："><a href="#2-5，构建最终功能集合：" class="headerlink" title="2.5，构建最终功能集合："></a>2.5，构建最终功能集合：</h3><p>######　　最终功能集合：<br><img src="http://image.asoheikeji.com/15313035341646.jpg" alt="最终功能集合"></p>
+<p>######　　产品页面流程图：<br><img src="http://image.asoheikeji.com/15313086787543.jpg" alt="产品页面流程图"></p>
+<h1 id="五、开发并验证MVP："><a href="#五、开发并验证MVP：" class="headerlink" title="五、开发并验证MVP："></a>五、开发并验证MVP：</h1><h2 id="1，开发MVP；"><a href="#1，开发MVP；" class="headerlink" title="1，开发MVP；"></a>1，开发MVP；</h2><p>　　a，原生或H5最方便形式开发核心功能；<br>　　b，集成苹果内购；<br>　　c，集成友盟统计；<br>　　d，集成手机号注册；<br>　　e，制作落地页；</p>
+<h2 id="2，验证MVP；"><a href="#2，验证MVP；" class="headerlink" title="2，验证MVP；"></a>2，验证MVP；</h2><h3 id="2-1，关键指标检测："><a href="#2-1，关键指标检测：" class="headerlink" title="2.1，关键指标检测："></a>2.1，关键指标检测：</h3><p>　　a，用户新增趋势；<br>　　b，用户使用时长；<br>　　c，用户使用频率；<br>　　d，单个用户价值；<br>　　e，用户付费率；<br>　　f，用户分享率；<br>　　g，用户次留周留；<br>　　h，用户获客成本；</p>
+<h3 id="2-2，Sean-Ellis测试："><a href="#2-2，Sean-Ellis测试：" class="headerlink" title="2.2，Sean Ellis测试："></a>2.2，Sean Ellis测试：</h3><p>　　问卷调查
+　　</p>
+<h3 id="2-3，产品精益画布："><a href="#2-3，产品精益画布：" class="headerlink" title="2.3，产品精益画布："></a>2.3，产品精益画布：</h3><p><img src="http://image.asoheikeji.com/15314669598011.jpg" alt="产品精益画布"><br>　　<br>　　<strong>以上。</strong></p>
+
+            </div>
+            <hr>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            <div class="reprint">
+                <p>
+                    <span class="reprint-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="https://shellmonster.github.io" class="b-link-green">GeekASO</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/ge-ren-xue-xi/wei-yu-yin-bao-chan-pin-she-ji-bing-yan-zheng-mvp.html" class="b-link-green">【增长黑客】为语音包产品设计并验证MVP</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '4f9ade43ff76d6b5eafa',
+        clientSecret: '7a0966b7e3ee26d6b99c1dbbb50c34d51aad3d6a',
+        repo: 'ShellMonster.github.io',
+        owner: 'ShellMonster',
+        admin: ["ShellMonster"],
+        id: '2018-07-10T21-22-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/ge-ren-xue-xi/fen-xi-wang-zhe-rong-yao-hook-shang-yin-mo-xing.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="【增长黑客】分析王者荣耀的Hook模型">
+                        
+                        <span class="card-title">【增长黑客】分析王者荣耀的Hook模型</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">分析王者荣耀的HOOK模型-增长课题　　文章较长，可根据目录自行选择阅读部分。
+一、王者荣耀用户画像分析：　　关于王者荣耀历史不在此分析，相关历史可查看极光数据来查看相关情况。
+1，王者荣耀用户画像数据：1.1，王者荣耀用户画像：
+1.2，</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-08-23
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/个人学习/" class="post-category" target="_blank">
+                                    个人学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hook/" target="_blank">
+                        <span class="chip bg-color">hook</span>
+                    </a>
+                    
+                    <a href="/tags/上瘾模型/" target="_blank">
+                        <span class="chip bg-color">上瘾模型</span>
+                    </a>
+                    
+                    <a href="/tags/王者荣耀/" target="_blank">
+                        <span class="chip bg-color">王者荣耀</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/qi-ta/huan-ying-shi-yong-mweb.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="欢迎使用 MWeb">
+                        
+                        <span class="card-title">欢迎使用 MWeb</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">欢迎使用 MWebMWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。MWeb 有以下特色：
+软件本身：
+使用原生的 macOS 技术打造，追求与系统的完美结合。
+原则上，首</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-07-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/其他/" class="post-category" target="_blank">
+                                    其他
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Mweb/" target="_blank">
+                        <span class="chip bg-color">Mweb</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/" target="_blank">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: GeekASO<br />'
+            + '作者: 道长@ASO黑科技<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">33.6k</span>
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ShellMonster" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1013373636@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1013373636" class="tooltipped" data-tooltip="QQ联系我: 1013373636" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
