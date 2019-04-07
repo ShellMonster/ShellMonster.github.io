@@ -1,0 +1,1019 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="【增长黑客】分析王者荣耀的Hook模型, ASO优化，App推广渠道，积分墙打量，机刷，关键词优化，榜单优化。">
+    <meta name="description" content="分析王者荣耀的HOOK模型-增长课题　　文章较长，可根据目录自行选择阅读部分。
+一、王者荣耀用户画像分析：　　关于王者荣耀历史不在此分析，相关历史可查看极光数据来查看相关情况。
+1，王者荣耀用户画像数据：1.1，王者荣耀用户画像：
+1.2，">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>【增长黑客】分析王者荣耀的Hook模型 | GeekASO</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">GeekASO</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">GeekASO</div>
+        <div class="logo-desc">
+            
+            ASO优化，App推广渠道，积分墙打量，机刷，关键词优化，榜单优化。
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ShellMonster" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ShellMonster" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewbox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        【增长黑客】分析王者荣耀的Hook模型
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hook/" target="_blank">
+                                <span class="chip bg-color">hook</span>
+                            </a>
+                        
+                            <a href="/tags/上瘾模型/" target="_blank">
+                                <span class="chip bg-color">上瘾模型</span>
+                            </a>
+                        
+                            <a href="/tags/王者荣耀/" target="_blank">
+                                <span class="chip bg-color">王者荣耀</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/个人学习/" class="post-category" target="_blank">
+                                个人学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2018-08-23
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        7.3k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        25 分
+                    </div>
+                    
+                
+				
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="分析王者荣耀的HOOK模型-增长课题"><a href="#分析王者荣耀的HOOK模型-增长课题" class="headerlink" title="分析王者荣耀的HOOK模型-增长课题"></a>分析王者荣耀的HOOK模型-增长课题</h1><p>　　文章较长，可根据目录自行选择阅读部分。</p>
+<h1 id="一、王者荣耀用户画像分析："><a href="#一、王者荣耀用户画像分析：" class="headerlink" title="一、王者荣耀用户画像分析："></a>一、王者荣耀用户画像分析：</h1><p>　　关于王者荣耀历史不在此分析，相关历史可查看<a href="https://baijiahao.baidu.com/s?id=1570326469588836&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">极光数据</a>来查看相关情况。</p>
+<h2 id="1，王者荣耀用户画像数据："><a href="#1，王者荣耀用户画像数据：" class="headerlink" title="1，王者荣耀用户画像数据："></a>1，王者荣耀用户画像数据：</h2><h3 id="1-1，王者荣耀用户画像："><a href="#1-1，王者荣耀用户画像：" class="headerlink" title="1.1，王者荣耀用户画像："></a>1.1，王者荣耀用户画像：</h3><p><img src="http://image.asoheikeji.com/15316721932272.jpg" alt></p>
+<h3 id="1-2，王者荣耀用户机型分布："><a href="#1-2，王者荣耀用户机型分布：" class="headerlink" title="1.2，王者荣耀用户机型分布："></a>1.2，王者荣耀用户机型分布：</h3><p><img src="http://image.asoheikeji.com/15316722470305.jpg" alt></p>
+<h3 id="1-3，王者荣耀用户应用偏好度："><a href="#1-3，王者荣耀用户应用偏好度：" class="headerlink" title="1.3，王者荣耀用户应用偏好度："></a>1.3，王者荣耀用户应用偏好度：</h3><p><img src="http://image.asoheikeji.com/15316722832471.jpg" alt></p>
+<h3 id="1-4，王者荣耀用户使用时段分布："><a href="#1-4，王者荣耀用户使用时段分布：" class="headerlink" title="1.4，王者荣耀用户使用时段分布："></a>1.4，王者荣耀用户使用时段分布：</h3><p><img src="http://image.asoheikeji.com/15316723338106.jpg" alt></p>
+<h2 id="2，电子竞技用户画像数据："><a href="#2，电子竞技用户画像数据：" class="headerlink" title="2，电子竞技用户画像数据："></a>2，电子竞技用户画像数据：</h2><h3 id="2-1，中国电子竞技用户性别比例："><a href="#2-1，中国电子竞技用户性别比例：" class="headerlink" title="2.1，中国电子竞技用户性别比例："></a>2.1，中国电子竞技用户性别比例：</h3><p><img src="http://image.asoheikeji.com/15316728321901.jpg" alt></p>
+<h3 id="2-2，中国电子竞技年龄占比情况："><a href="#2-2，中国电子竞技年龄占比情况：" class="headerlink" title="2.2，中国电子竞技年龄占比情况："></a>2.2，中国电子竞技年龄占比情况：</h3><p><img src="http://image.asoheikeji.com/15316728736033.jpg" alt></p>
+<h3 id="2-3，中国电子竞技用户各级城市分布："><a href="#2-3，中国电子竞技用户各级城市分布：" class="headerlink" title="2.3，中国电子竞技用户各级城市分布："></a>2.3，中国电子竞技用户各级城市分布：</h3><p><img src="http://image.asoheikeji.com/15316729055444.jpg" alt></p>
+<h3 id="2-4，中国电子竞技用户学历分布："><a href="#2-4，中国电子竞技用户学历分布：" class="headerlink" title="2.4，中国电子竞技用户学历分布："></a>2.4，中国电子竞技用户学历分布：</h3><p><img src="http://image.asoheikeji.com/15316729372081.jpg" alt></p>
+<h3 id="2-5，电子竞技用户关注类型分布："><a href="#2-5，电子竞技用户关注类型分布：" class="headerlink" title="2.5，电子竞技用户关注类型分布："></a>2.5，电子竞技用户关注类型分布：</h3><p><img src="http://image.asoheikeji.com/15316729615336.jpg" alt><br>　　以上数据来源<a href="http://cio.51cto.com/art/201706/543633.htm" target="_blank" rel="noopener">企鹅智酷</a>。</p>
+<h2 id="3，总结分析："><a href="#3，总结分析：" class="headerlink" title="3，总结分析："></a>3，总结分析：</h2><p>　　根据王者荣耀用户画像数据与电子竞技用户画像数据来看，两者情况基本吻合，从用户年龄分布，学历等；<br>　　数据情况表示，王者荣耀用户男女比例基本成9:11，男性用户相对比女性用户更少，这个点基本上反映了王者荣耀在moba游戏领域的一反常态；我们可以通过电子竞技用户画像看出在常规情况下女性用户是明显少于男性用户的，可能只有2-3成；<br>　　<br>　　所以王者荣耀用户标签基本为<strong>二三线城市为主</strong>，学历以<strong>专科+本科学历</strong>为主，年龄以<strong>20-25岁</strong>为主，<strong>收入以中等偏下</strong>，3000-8000为主(地域及职业不同)，<strong>中午及晚间较活跃</strong>等。<br>　　<br>　　<strong>附：王者荣耀用户线下组队实景图：</strong><br><img src="http://image.asoheikeji.com/15316740839934.jpg" alt></p>
+<h2 id="4，典型用户画像概述及分析："><a href="#4，典型用户画像概述及分析：" class="headerlink" title="4，典型用户画像概述及分析："></a>4，典型用户画像概述及分析：</h2><h3 id="4-1，典型用户画像①："><a href="#4-1，典型用户画像①：" class="headerlink" title="4.1，典型用户画像①："></a>4.1，典型用户画像①：</h3><p>　　小明，性别男，高职毕业，22岁，在当地县城工作，无房未婚，月收入4000，平常喜欢看游戏直播；通过游戏平台了解到“王者荣耀”；闲暇时间会与朋友一起开黑组队玩王者，喜欢结交一些游戏内好友。</p>
+<h3 id="4-2，典型用户画像②："><a href="#4-2，典型用户画像②：" class="headerlink" title="4.2，典型用户画像②："></a>4.2，典型用户画像②：</h3><p>　　珊珊，性别女，本科毕业，25岁，一线城市白领，无房未婚，月收入8000；通过朋友介绍了解“王者荣耀”；除了逛街刷剧外，喜欢与好友一起组队玩王者排位，打发时间，击杀敌人提升生活乐趣。</p>
+<h3 id="4-3，典型用户画像③："><a href="#4-3，典型用户画像③：" class="headerlink" title="4.3，典型用户画像③："></a>4.3，典型用户画像③：</h3><p>　　贝贝，性别男，大专毕业，23岁，二线城市工作，无房未婚，月收入6000，moba游戏忠粉，日常看游戏直播；通过应用市场推荐了解到“王者荣耀”；喜欢王者内游戏“带妹”。</p>
+<h1 id="二、王者荣耀产品生命周期分析："><a href="#二、王者荣耀产品生命周期分析：" class="headerlink" title="二、王者荣耀产品生命周期分析："></a>二、王者荣耀产品生命周期分析：</h1><h2 id="1，数据情况："><a href="#1，数据情况：" class="headerlink" title="1，数据情况："></a>1，数据情况：</h2><h3 id="1-1，榜单数据："><a href="#1-1，榜单数据：" class="headerlink" title="1.1，榜单数据："></a>1.1，榜单数据：</h3><p>　　<a href="https://www.qimai.cn/app/rank/appid/989673964/country/cn" target="_blank" rel="noopener">App历史榜单</a>：<br><img src="http://image.asoheikeji.com/15316747102990.jpg" alt="-w1148"><br>　　<a href="https://www.qimai.cn/rank/index/brand/all/genre/6014/device/iphone/country/cn/date/2018-07-16" target="_blank" rel="noopener">App今日榜单</a>(2018-07-16)：<br><img src="http://image.asoheikeji.com/15316747899285.jpg" alt="-w1433"><br>　　从榜单数据来看，总榜位置一直在波动，除了苹果的调整因素外，主要则还是王者荣耀本身及市场的情况导致的；<br>　　市场游戏用户量是恒定的，且用户的可支配时间也是趋于一个区间稳定的，这就导致当有其他游戏上线或者发布的时候，用户的时间支配上会偏向于不青睐已经玩过的“王者”；所以此情况下王者的榜单情况也会出现小段时间的下跌等。　</p>
+<h3 id="1-2，下载量数据："><a href="#1-2，下载量数据：" class="headerlink" title="1.2，下载量数据："></a>1.2，下载量数据：</h3><p>　　数据来源于<a href="http://android.kuchuan.com/page/detail/download?package=com.tencent.tmgp.sgame&amp;infomarketid=10&amp;site=0#!/sum/com.tencent.tmgp.sgame" target="_blank" rel="noopener">酷传网</a>：<br><img src="http://image.asoheikeji.com/15316746633543.jpg" alt="-w828"><br>　　可以看到王者的下载量目前已呈现出明显的下滑趋势，主要原因在于当前市场的覆盖率导致，大量用户已成为王者的用户，或者已弃用王者或者根本不玩王者等。</p>
+<h3 id="1-3，独立设备数据："><a href="#1-3，独立设备数据：" class="headerlink" title="1.3，独立设备数据："></a>1.3，独立设备数据：</h3><p>　　<strong>月度</strong>-数据来源<a href="http://index.iresearch.com.cn/app/detail?id=8531&amp;Tid=64" target="_blank" rel="noopener">艾瑞指数</a>：<br><img src="http://image.asoheikeji.com/15316753819016.jpg" alt="-w1178"><br>　　<strong>日均</strong>-数据来源<a href="http://index.iresearch.com.cn/app/detail?id=8531&amp;Tid=64" target="_blank" rel="noopener">艾瑞数据</a>：<br><img src="http://image.asoheikeji.com/15316754902217.jpg" alt="-w1184"><br>　　可以看到王者的活跃用户量目前已经呈明显的下降趋势出现，大部分用户可能已转向其他品类游戏，或者其他品类产品等。</p>
+<h2 id="2，产品功能方面："><a href="#2，产品功能方面：" class="headerlink" title="2，产品功能方面："></a>2，产品功能方面：</h2><p>　　产品团队在不断开发新的玩法模式，并且在设计新的英雄模型，及技能等；<br><img src="http://image.asoheikeji.com/15316759600735.jpg" alt="-w920"><br><img src="http://image.asoheikeji.com/15316760180031.jpg" alt="-w974"></p>
+<h2 id="3，运营手段方面："><a href="#3，运营手段方面：" class="headerlink" title="3，运营手段方面："></a>3，运营手段方面：</h2><h3 id="3-1，用户召回："><a href="#3-1，用户召回：" class="headerlink" title="3.1，用户召回："></a>3.1，用户召回：</h3><p>　　通过好友与好友之间发送召回邀请，给予发出召回请求用户发送游戏内奖励(根据不同邀请程度，分等级给予奖励)，同时在被邀请用户的QQ或微信客户端直接展示邀请消息。<br><img src="http://image.asoheikeji.com/IMG_9430.png" alt="IMG_9430"></p>
+<h3 id="3-2，各类事件联合营销："><a href="#3-2，各类事件联合营销：" class="headerlink" title="3.2，各类事件联合营销："></a>3.2，各类事件联合营销：</h3><p>　　例如世界杯活动，联合皮肤；例如kpl决赛送礼物等；<br><img src="http://image.asoheikeji.com/IMG_9431.png" alt="IMG_9431"></p>
+<h3 id="3-3，赛季奖励，抽奖折扣："><a href="#3-3，赛季奖励，抽奖折扣：" class="headerlink" title="3.3，赛季奖励，抽奖折扣："></a>3.3，赛季奖励，抽奖折扣：</h3><p>　　赛季刷新，玩游戏奖励皮肤、钻石；<br><img src="http://image.asoheikeji.com/IMG_9429.png" alt="IMG_9429"><br>　　商城抽奖折扣，转化用户付费；<br><img src="http://image.asoheikeji.com/15316768824196.jpg" alt></p>
+<h2 id="4，产品生命周期分析总结："><a href="#4，产品生命周期分析总结：" class="headerlink" title="4，产品生命周期分析总结："></a>4，产品生命周期分析总结：</h2><p>　　根据以上各类情况来看，王者荣耀目前已处于“衰退期”，市场游戏的不断上新，冲击已有用户，占据了用户时间；产品端不断开发新功能玩法及英雄，刺激老用户回流活跃；运营端配合各类奖励机制，包括用户召回，赛季玩对局奖励等。<br>　　此阶段的“增长”也基本以“召回老用户”及“促活已有用户”为主，以进入另一个“快速增长期”。</p>
+<h1 id="三、王者荣耀体系框架概述："><a href="#三、王者荣耀体系框架概述：" class="headerlink" title="三、王者荣耀体系框架概述："></a>三、王者荣耀体系框架概述：</h1><h2 id="1，框架图："><a href="#1，框架图：" class="headerlink" title="1，框架图："></a>1，框架图：</h2><p>　　图片来源<a href="https://www.pmcaff.com/article/index/678059903723648" target="_blank" rel="noopener">pmcaff</a>；框架目前已落后与最新王者版本，但整体任与王者荣耀游戏体系相符。<br><img src="http://image.asoheikeji.com/15316774532448.jpg" alt></p>
+<h2 id="2，简略分析："><a href="#2，简略分析：" class="headerlink" title="2，简略分析："></a>2，简略分析：</h2><h3 id="2-1，清晰明确的对战系统："><a href="#2-1，清晰明确的对战系统：" class="headerlink" title="2.1，清晰明确的对战系统："></a>2.1，清晰明确的对战系统：</h3><p>　　对战系统也是moba游戏的核心，王者在此方面不仅仅满足了大众用户的实时对战需求，同时在此基础上也开发了补充的“剧情模式”，游戏内为“冒险模式”+“边境突围”等；<br><img src="http://image.asoheikeji.com/IMG_9436.png" alt="IMG_9436"><br>　　在对战模式上以5v5核心对战为主，主要地图为“召唤师峡谷”，其次用户可以玩随机附加技能类型的“无限乱斗”及单边统一英雄的“克隆大作战”模式；<br><img src="http://image.asoheikeji.com/IMG_9437.png" alt="IMG_9437"><br>　　英雄配置上主要为“前排”+“C位”+“辅助”形式，同时基于moba形式开设了“法师”、“刺客”、“战士”、“坦克”、“辅助”、“射手”等职业；<br><img src="http://image.asoheikeji.com/IMG_9433.png" alt="IMG_9433"><br>　　在装备上，根据数值算法的分配，也分为了各个职业不同的适配装备，区别于常规moba游戏的区别在于王者可以“不回城购买装备”，“死亡不掉金币”，“自动推荐出装”等，简便化的操作也满足了普通游戏玩家对于moba游戏的体验乐趣；<br><img src="http://image.asoheikeji.com/IMG_9439.png" alt="IMG_9439"><br>　　同时还附带有“铭文”系统，“皮肤”系统等等。<br><img src="http://image.asoheikeji.com/IMG_9435.png" alt="IMG_9435"></p>
+<h3 id="2-2，丰富好玩的好友及社区板块："><a href="#2-2，丰富好玩的好友及社区板块：" class="headerlink" title="2.2，丰富好玩的好友及社区板块："></a>2.2，丰富好玩的好友及社区板块：</h3><h4 id="2-2-1，好友系统："><a href="#2-2-1，好友系统：" class="headerlink" title="2.2.1，好友系统："></a>2.2.1，好友系统：</h4><p>　　基于微信及QQ的王者荣耀，天生就具备了“社交”的属性，所以在此基础上，好友的板块也是异常丰富；<br>　　包括基于微信及QQ的游戏好友推荐，玩一局的自动加游戏好好友的形式；包括基于地理位置的附近好友，展示玩家之间的段位等级，及其他详细信息等，极大的拉近了不同玩家之间的“亲密度”，当然此时也可以看作“王者荣耀”为一款陌生人的社交软件；还包括游戏内的“闺蜜”“兄弟”标签，师徒系统等。<br><img src="http://image.asoheikeji.com/IMG_9434.png" alt="IMG_9434"></p>
+<h4 id="2-2-2，社区板块："><a href="#2-2-2，社区板块：" class="headerlink" title="2.2.2，社区板块："></a>2.2.2，社区板块：</h4><p>　　关于社区板块，这也是王者的一大特色，社区内用户可以相互沟通游戏技巧，相互邀约组队，以及观看英雄故事，购买周边物品等等等等。<br><img src="http://image.asoheikeji.com/IMG_9438.png" alt="IMG_9438"></p>
+<h3 id="2-3，多样化的货币及VIP系统："><a href="#2-3，多样化的货币及VIP系统：" class="headerlink" title="2.3，多样化的货币及VIP系统："></a>2.3，多样化的货币及VIP系统：</h3><h4 id="2-3-1，货币系统："><a href="#2-3-1，货币系统：" class="headerlink" title="2.3.1，货币系统："></a>2.3.1，货币系统：</h4><p>　　<strong>金币：</strong>通过对战、每日任务、冒险模式等获取；可用于购买部分英雄、普通铭文抽奖等。<br>　　<strong>钻石：</strong>通过成就、日常活动等获取；可用于购买部分英雄、高级铭文抽奖、钻石夺宝等。<br>　　<strong>点券</strong>：通过充值获得；可用于购买英雄、点券夺宝等。<br><img src="http://image.asoheikeji.com/IMG_9432.png" alt="IMG_9432"><br>　　<strong>铭文碎片：</strong>通过金币或钻石抽奖、日常任务、日常活动等获取；可用于购买铭文。<br><img src="http://image.asoheikeji.com/IMG_9435.png" alt="IMG_9435"></p>
+<h4 id="2-3-2，VIP系统："><a href="#2-3-2，VIP系统：" class="headerlink" title="2.3.2，VIP系统："></a>2.3.2，VIP系统：</h4><h5 id="2-3-2-1，VIP等级："><a href="#2-3-2-1，VIP等级：" class="headerlink" title="2.3.2.1，VIP等级："></a>2.3.2.1，VIP等级：</h5><p>　　根据充值及消费情况，成多个等级展示，不同等级之间特权不同，且高等级有部分限定奖励等；<br><img src="http://image.asoheikeji.com/IMG_9440.png" alt="IMG_9440"><br><img src="http://image.asoheikeji.com/IMG_9441.png" alt="IMG_9441"></p>
+<h5 id="2-3-2-2，充值体系："><a href="#2-3-2-2，充值体系：" class="headerlink" title="2.3.2.2，充值体系："></a>2.3.2.2，充值体系：</h5><p>　　<strong>首充体系：</strong>首充6元，送赵云，及其他各项礼包；此充值的是否触发也是决定用户是否会为后续出现的其他付费功能买单的决定因素。<br><img src="http://image.asoheikeji.com/15316795797279.jpg" alt><br>　　<strong>续充体系：</strong>续充也与VIP会员等级有关，此处不多赘述。</p>
+<h2 id="3，moba游戏附带分析："><a href="#3，moba游戏附带分析：" class="headerlink" title="3，moba游戏附带分析："></a>3，moba游戏附带分析：</h2><p>　　在分析“王者荣耀”的同时附带分析了部分其他moba手游，也发现了其他一些更为创新的细节玩法；</p>
+<h3 id="3-1，野怪不自动回血："><a href="#3-1，野怪不自动回血：" class="headerlink" title="3.1，野怪不自动回血："></a>3.1，野怪不自动回血：</h3><p>　　游戏名为“英魂之刃”；<br><img src="media/15317171718728/IMG_9503.png" alt="IMG_9503"><br>　　这里主要表现为野怪被攻击，玩家未杀死野怪或野怪走回原位，野怪不自动回血。(王者，lol等moba游戏均表现为野怪自动回血，并且以一定比例回血。)</p>
+<h3 id="3-2，对局中玩家可切换英雄："><a href="#3-2，对局中玩家可切换英雄：" class="headerlink" title="3.2，对局中玩家可切换英雄："></a>3.2，对局中玩家可切换英雄：</h3><p>　　游戏名为“光影对决”；<br>　　这里主要表现为玩家对局中，被杀或回城后，可切换为已有英雄中其他英雄，并且装备会自动适配；</p>
+<h3 id="3-3，玩家双英雄模式："><a href="#3-3，玩家双英雄模式：" class="headerlink" title="3.3，玩家双英雄模式："></a>3.3，玩家双英雄模式：</h3><p>　　这里是“王者荣耀”的其中模式；<br>　　这里主要表现为玩家选择英雄时可以选择绑定2个英雄，游戏对局过程中，可以切换另外一个英雄，并且切换时间有cd；</p>
+<h3 id="3-4，玩家训练模式瞬移功能："><a href="#3-4，玩家训练模式瞬移功能：" class="headerlink" title="3.4，玩家训练模式瞬移功能："></a>3.4，玩家训练模式瞬移功能：</h3><p>　　游戏名为“小米超神”；<br>　　这里主要表现为玩家训练模式中选择英雄后在对局界面，使用“操作菜单”功能，点击“瞬移”后点击地图上位置，可以做到瞬间传送，且无cd，也算是moba游戏”训练模式“中一个独特的小细节玩法。</p>
+<h1 id="四、王者荣耀hook模型“触发”模块分析："><a href="#四、王者荣耀hook模型“触发”模块分析：" class="headerlink" title="四、王者荣耀hook模型“触发”模块分析："></a>四、王者荣耀hook模型“触发”模块分析：</h1><h2 id="1，外部触发方面："><a href="#1，外部触发方面：" class="headerlink" title="1，外部触发方面："></a>1，外部触发方面：</h2><p><img src="http://image.asoheikeji.com/15316811930353.jpg" alt></p>
+<h3 id="1-1，付费型触发："><a href="#1-1，付费型触发：" class="headerlink" title="1.1，付费型触发："></a>1.1，付费型触发：</h3><p>　　主要是一些通过付费行为，购买广告位或者展示机会等的，例如网盟推广，应用市场广告位，微信/QQ游戏中心推荐等等；<br><img src="http://image.asoheikeji.com/IMG_9442.png" alt="IMG_9442"></p>
+<h3 id="1-2，回馈型触发："><a href="#1-2，回馈型触发：" class="headerlink" title="1.2，回馈型触发："></a>1.2，回馈型触发：</h3><p>　　主要是市场的报道，媒体新闻等等，这方面可以通过产品本身的质量或者公关部门的发力以及产品内容等的发出来实现；例如游戏视频，新闻报道，游戏平台推荐等。<br><img src="http://image.asoheikeji.com/15316805015473.jpg" alt="-w661"><br><img src="http://image.asoheikeji.com/15316806636983.jpg" alt="-w993"></p>
+<h3 id="1-3，人际型触发："><a href="#1-3，人际型触发：" class="headerlink" title="1.3，人际型触发："></a>1.3，人际型触发：</h3><p>　　主要是推荐形式的触发；例如用户之间的邀请，电子邮件订阅，口口相传，社交网络的“点赞”标记等等。<br><img src="http://image.asoheikeji.com/IMG_9443.png" alt="IMG_9443"></p>
+<h3 id="1-4，自主型触发："><a href="#1-4，自主型触发：" class="headerlink" title="1.4，自主型触发："></a>1.4，自主型触发：</h3><p>　　主要是用户经过“各类信息”的堆积，内容的轰炸，被动的接受；例如群内用户聊天的涉及，搞笑游戏视频等等。<br><img src="http://image.asoheikeji.com/15316811133942.jpg" alt="-w798"><br><img src="http://image.asoheikeji.com/15316811421414.jpg" alt="-w1280"></p>
+<h2 id="2，内部触发方面："><a href="#2，内部触发方面：" class="headerlink" title="2，内部触发方面："></a>2，内部触发方面：</h2><p><img src="http://image.asoheikeji.com/15316812029094.jpg" alt></p>
+<h3 id="2-1，内部触发简要说明："><a href="#2-1，内部触发简要说明：" class="headerlink" title="2.1，内部触发简要说明："></a>2.1，内部触发简要说明：</h3><p>　　内部触发有点类似“外部触发”的“自主型触发”，区别在于前者是主动性的触发，而后者是被动性的触发；<br>　　王者在此方面通过外部各方影响用户以后，在用户大脑已形成基础概念，用打标签的形式来描述就是“娱乐App”，“团队游戏”，“获得满足感”等等；当用户大脑有此类标签后形成了王者的大致框架后，则会影响到用户开始进行“行动”或者准备进行：行动”。<br>　　<br>　　<strong>附加知识点-游戏策划上需求的分析，用户标签的分析。</strong><span id="jump"></span><br>　　这里也就涉及到用户画像里面的情况，根据用户画像，分析用户需求点，或者说满足用户排遣情绪倾向的情况等；根据用户标签，以及部分心理学，行为学等把用户逐渐的圈入产品中，然后让用户沉迷与产品中；<strong>所以说一款好的产品也是人性弱点的集合</strong>。(关于此类知识可搜索有关“游戏策划”方面的知识，例如<a href="http://www.woshipm.com/operate/34168.html" target="_blank" rel="noopener">《史玉柱自述：我是如何做游戏策划》</a>)</p>
+<h3 id="2-2，内部触发典型情况："><a href="#2-2，内部触发典型情况：" class="headerlink" title="2.2，内部触发典型情况：　　"></a>2.2，内部触发典型情况：　　</h3><p>　　另外，用户的情绪及需求方面也是内部触发的主要点；例如用户心里需要发泄，正面的或者负面的情绪积蓄等，这些情绪的堆积让用户主动性的开始想通过社交或者其他方式来疏通，游戏就是其中一个解决点。<br>　　从需求点出发来说，用户想要有一款产品来消遣，例如用来打发时间，娱乐，或者本身就是想有一款游戏来玩等等，都是会让用户主动性的从需求点出发找寻匹配的产品。</p>
+<h3 id="2-3，外部触发与内部触发结果区别："><a href="#2-3，外部触发与内部触发结果区别：" class="headerlink" title="2.3，外部触发与内部触发结果区别：　　"></a>2.3，外部触发与内部触发结果区别：　　</h3><p>　　<strong>外部触发会让用户去尝试体验一个新的东西；而内部触发会让用户体验产品后自身的需求或者情感与产品绑定，每当有需求或者情绪等方面问题时则会继续使用产品，成为产品的“粉丝”。</strong></p>
+<h1 id="五、王者荣耀hook模型“行动”模块分析："><a href="#五、王者荣耀hook模型“行动”模块分析：" class="headerlink" title="五、王者荣耀hook模型“行动”模块分析："></a>五、王者荣耀hook模型“行动”模块分析：</h1><h2 id="1，简略分析："><a href="#1，简略分析：" class="headerlink" title="1，简略分析："></a>1，简略分析：</h2><p>　　“触发”后需要用户“行动”，触发才是一个有效的出发；而“行动”则又分为“动机”和“能力”和“触发”，有动机无能力未触发不能达成“行动”，有能力无动机未触发也不能达成行动。<br>　　<br>　　<strong>举例：</strong>你的手机响了，而你却没有接，这是为什么？可能是因为手机放在包里，你一时间没找到。这个时候，你没有能力接电话，导致行动受阻。换句话说，你的能力被限制住了。 也许你以为对方是电话推销员，不想接听。动机不足导致你对来电置若罔闻。 也可能来电很重要，你也够得着手机，但是手机铃声被设置为静音了。这个时候，就算你有强烈的动机，并且能轻易接通电话，但还是没接上，因为你压根儿就没听见手机响。这就意味着，触发没有出现。<br><img src="http://image.asoheikeji.com/15316821754529.jpg" alt><br>　　福格行为模型可以用公式来呈现，即B=MAT。B代表行为，M代表动机，A代表能力，T代表触发。</p>
+<h2 id="2，动机分析："><a href="#2，动机分析：" class="headerlink" title="2，动机分析："></a>2，动机分析：</h2><h3 id="2-1，简略分析："><a href="#2-1，简略分析：" class="headerlink" title="2.1，简略分析："></a>2.1，简略分析：</h3><p>　　“触发”提醒用户采取“行动”，而“动机”决定用户是否愿意采取“行动”；<br>　　核心动机：第一种，追求快乐，逃避痛苦；第二种，追求希望，逃避恐惧；第三种，追求认同，逃避排斥；</p>
+<h3 id="2-2，针对王者的举例："><a href="#2-2，针对王者的举例：" class="headerlink" title="2.2，针对王者的举例：　　"></a>2.2，针对王者的举例：　　</h3><p>　　<strong>举例：</strong>工作及加班累，压力大，想要解放心理，逃避内心痛苦，希望在其他事件上建立快乐，同时也希望也其他事件上“被认可”，来抵消自己在工作及加班过程中身心上的“能力不够”或“被排斥”(此处主要是自己心理的“排斥”)；所以打开王者荣耀，拉上三五小伙伴，开始领兵杀敌保卫“水晶”。</p>
+<h2 id="3，能力分析："><a href="#3，能力分析：" class="headerlink" title="3，能力分析："></a>3，能力分析：</h2><h3 id="3-1，简略分析："><a href="#3-1，简略分析：" class="headerlink" title="3.1，简略分析："></a>3.1，简略分析：</h3><p>　　“能力”是代表用户是否有实力或者能利用现有资源或技能来达到某项目的。<br><img src="http://image.asoheikeji.com/15316830737654.jpg" alt><br>　　关于“能力”另一个要说的就是“简洁性”，也就是用户完成这个过程时，这个过程有多简单，时间消耗越少，所需要投入的时间精力成本越低等等。</p>
+<ul>
+<li>时间——完成这项活动所需的时间。</li>
+<li>金钱——从事这项活动所需的经济投入。</li>
+<li>体力——完成这项活动所需消耗的体力。</li>
+<li>脑力——从事这项活动所需消耗的脑力。</li>
+<li>社会偏差——他人对该项活动的接受度。</li>
+<li>非常规性——按照福格的定义，“该项活动与常规活动之间的匹配程度或矛盾程度”。<br>　　<br>　　这里也可以看出的是，要求的能力越低，越是能被更多的用户去达到。</li>
+</ul>
+<h3 id="3-2，针对王者的举例："><a href="#3-2，针对王者的举例：" class="headerlink" title="3.2，针对王者的举例："></a>3.2，针对王者的举例：</h3><p>　　<strong>举例：</strong>王者荣耀的新手体验及教学模式，装备购买默认推荐直接点击即可，及轮盘操作，技能点击自动瞄准释放等等；越是简单操作方便，好理解，时间精力消耗少，越是对于用户的“能力”要求越低，越是“简洁”。</p>
+<h4 id="3-2-1，操作模式："><a href="#3-2-1，操作模式：" class="headerlink" title="3.2.1，操作模式："></a>3.2.1，操作模式：</h4><p>　　<strong>轮盘操作：</strong>相对其他Moba类游戏来说，王者无需鼠标点击，最大程度降低了用户对于人物移动操控的难度，这也囊个让用更好的沉浸到游戏体验中；</p>
+<h4 id="3-2-2，技能要求-自动瞄准："><a href="#3-2-2，技能要求-自动瞄准：" class="headerlink" title="3.2.2，技能要求+自动瞄准："></a>3.2.2，技能要求+自动瞄准：</h4><p>　　<strong>3个技能：</strong>传统moba游戏人物伴有4个或者5个技能，用户需要了解人物的多个技能，指向或非指向，操作方式等，这就造成了用户对于大众moba游戏很难上手的情况，往往没有高清技能或者不知道怎么放冲入战场就被击杀，没有任何游戏体验而言；王者荣耀在此情况下则改动为大多英雄3个技能，并且手指滑动即可控制释放，取消按钮也非常显著。<br><img src="http://image.asoheikeji.com/15316842628871.jpg" alt></p>
+<h4 id="3-2-3，装备购买："><a href="#3-2-3，装备购买：" class="headerlink" title="3.2.3，装备购买："></a>3.2.3，装备购买：</h4><p>　　<strong>全程推荐，不回城购买</strong>DOTA购买装备需回车需查攻略了解各类装备合成及英雄佩戴的装备分配，被击杀后损失已有金币；LOL购买装备需回车有装备推荐及合成方式展示，但被击杀不损失已有金币；王者荣耀在两者基础上直接取消回城购买装备，同时不优先展示合成方式而是直接展示当前可购买的推荐装备，最小程度的降低用户的理解难度。</p>
+<h1 id="六、王者荣耀hook模型“酬赏”模块分析："><a href="#六、王者荣耀hook模型“酬赏”模块分析：" class="headerlink" title="六、王者荣耀hook模型“酬赏”模块分析："></a>六、王者荣耀hook模型“酬赏”模块分析：</h1><p><img src="http://image.asoheikeji.com/15316834965295.jpg" alt></p>
+<h2 id="1，简略分析：-1"><a href="#1，简略分析：-1" class="headerlink" title="1，简略分析："></a>1，简略分析：</h2><p>　　用户用户进行某个“行动”，必然是为了满足自己的某个“需求”，当用户有心思想要进行“行动”的“动机”时就要看过程是否简单，能力要求是否低了，而是否能满足用户的需求则要看产品的酬赏体系是否能让用户觉得“满足了需求”。<br>　　当三个条件满足时，用户则基本已经入了依赖的过程，也就是“上瘾”，但上瘾的程度则需要根据“酬赏程度”及“达成的效果”来评估；上瘾度越高的用户，则自身与产品本身系带的绑定就越深，越是欲罢不能。</p>
+<h2 id="2，社交酬赏："><a href="#2，社交酬赏：" class="headerlink" title="2，社交酬赏："></a>2，社交酬赏：</h2><h3 id="2-1，简略分析：-1"><a href="#2-1，简略分析：-1" class="headerlink" title="2.1，简略分析："></a>2.1，简略分析：</h3><p>　　来自于用户的“被认可”，用户从产品中通过与他人的互动而获取的人际奖励。</p>
+<h3 id="2-2，针对王者的举例：-1"><a href="#2-2，针对王者的举例：-1" class="headerlink" title="2.2，针对王者的举例："></a>2.2，针对王者的举例：</h3><h4 id="2-2-1，游戏内“一血”及“五杀”等声音播报；"><a href="#2-2-1，游戏内“一血”及“五杀”等声音播报；" class="headerlink" title="2.2.1，游戏内“一血”及“五杀”等声音播报；"></a>2.2.1，游戏内“一血”及“五杀”等声音播报；</h4><p>　　针对游戏不同节奏，王者内会有不同的背景音乐及特效音乐播放，例如玩家拿到“一血”后屏幕上会显示“xxx击杀了xxx获得了‘第一滴血’”；这个展示及背景声音的出现给予了此类玩家极大的鼓舞，也是自身游戏实力的“被认可”。<br><img src="http://image.asoheikeji.com/15316854388117.jpg" alt></p>
+<h4 id="2-2-2，游戏内玩家间发快捷语的“玩的不错”；"><a href="#2-2-2，游戏内玩家间发快捷语的“玩的不错”；" class="headerlink" title="2.2.2，游戏内玩家间发快捷语的“玩的不错”；"></a>2.2.2，游戏内玩家间发快捷语的“玩的不错”；</h4><p>　　游戏内有各类快捷语言，在给予用户方便的同时，也可以通过语言对队友玩家进行赞赏等，当点击“玩的不错”快捷语时就会在游戏内播放相关音效。</p>
+<h4 id="2-2-3，游戏周报；"><a href="#2-2-3，游戏周报；" class="headerlink" title="2.2.3，游戏周报；"></a>2.2.3，游戏周报；</h4><p>　　游戏周报会在每周一发送给用户，用户可以进行分享，并查看自己上一周游戏的相关数据；例如击杀了多少次其他玩家，获得了多少个“助攻”等。<br><img src="http://image.asoheikeji.com/15316857568977.jpg" alt="-w506"></p>
+<h4 id="2-2-4，五杀截图朋友圈；"><a href="#2-2-4，五杀截图朋友圈；" class="headerlink" title="2.2.4，五杀截图朋友圈；"></a>2.2.4，五杀截图朋友圈；</h4><p>　　五杀后会自动截图并提示分享朋友圈，这个过程满足了用户“秀晒炫”的心理，并且在一定程度上达到了“投入”的过程，也与上一个例子类似。<br><img src="http://image.asoheikeji.com/15316859814446.jpg" alt><br><img src="http://image.asoheikeji.com/15316859907486.jpg" alt></p>
+<h4 id="2-2-5，微信群内成员等级排序等；"><a href="#2-2-5，微信群内成员等级排序等；" class="headerlink" title="2.2.5，微信群内成员等级排序等；"></a>2.2.5，微信群内成员等级排序等；</h4><p>　　这里同上一个，也是一个“秀晒炫”的心理。<br><img src="http://image.asoheikeji.com/IMG_9444.png" alt="IMG_9444"></p>
+<h2 id="3，猎物酬赏："><a href="#3，猎物酬赏：" class="headerlink" title="3，猎物酬赏："></a>3，猎物酬赏：</h2><h3 id="3-1，简略分析：-1"><a href="#3-1，简略分析：-1" class="headerlink" title="3.1，简略分析："></a>3.1，简略分析：</h3><p>　　“猎物酬赏”，本质上是用户在“行动”过程中，获得“资源”或者“信息”的结果，包括物品，金钱，道具等。<br>　　<br>　　下图为“猎物酬赏”的心理过程：<br><img src="http://image.asoheikeji.com/15316851472615.jpg" alt></p>
+<h3 id="3-2，针对王者的举例：-1"><a href="#3-2，针对王者的举例：-1" class="headerlink" title="3.2，针对王者的举例："></a>3.2，针对王者的举例：</h3><h4 id="3-2-1，击杀玩家获得装备购买金币："><a href="#3-2-1，击杀玩家获得装备购买金币：" class="headerlink" title="3.2.1，击杀玩家获得装备购买金币："></a>3.2.1，击杀玩家获得装备购买金币：</h4><p>　　游戏内对局击杀玩家可以获得装备购买金币，购买更强力装备够可以击杀更多次其他玩家。</p>
+<h4 id="3-2-2，对局游戏获得游戏金币及经验成就："><a href="#3-2-2，对局游戏获得游戏金币及经验成就：" class="headerlink" title="3.2.2，对局游戏获得游戏金币及经验成就："></a>3.2.2，对局游戏获得游戏金币及经验成就：</h4><p>　　对局游戏后会有经验奖励用户来提升账号等级；同时根据游戏数据不同来累计成就，成就可展示又可获得对应道具；对于游戏后也会获得金币，金币则可以买其他好玩的英雄，增加更多未知的趣味。<br><img src="http://image.asoheikeji.com/15316865032866.jpg" alt></p>
+<h4 id="3-2-3，抽奖夺宝获得道具或英雄："><a href="#3-2-3，抽奖夺宝获得道具或英雄：" class="headerlink" title="3.2.3，抽奖夺宝获得道具或英雄："></a>3.2.3，抽奖夺宝获得道具或英雄：</h4><p>　　通过王者荣耀内不同地点的夺宝，来抽取格式各样的游戏内奖励。<br><img src="http://image.asoheikeji.com/15316866106352.jpg" alt></p>
+<h2 id="4，自我酬赏："><a href="#4，自我酬赏：" class="headerlink" title="4，自我酬赏："></a>4，自我酬赏：</h2><h3 id="4-1，简略分析："><a href="#4-1，简略分析：" class="headerlink" title="4.1，简略分析："></a>4.1，简略分析：</h3><p>　　“自我酬赏”，主要是玩家在“行动”过程中所获得的“成就感”、“操控感”等；在目标驱动下，克服多个障碍，达成目标完成任务，带来的满足感等。</p>
+<h3 id="4-2，针对王者荣耀的举例："><a href="#4-2，针对王者荣耀的举例：" class="headerlink" title="4.2，针对王者荣耀的举例："></a>4.2，针对王者荣耀的举例：</h3><h4 id="4-2，1，王者荣耀英雄的积累："><a href="#4-2，1，王者荣耀英雄的积累：" class="headerlink" title="4.2，1，王者荣耀英雄的积累："></a>4.2，1，王者荣耀英雄的积累：</h4><p>　　通过游戏对局，货币等的不断，购买各类铭文，英雄等，当用户看到自己英雄的数量和皮肤，铭文数量等时也是一个个人成就感的满足体现；关于这里也可以联想到孩童时期“集卡”玩法的风靡。<br><img src="http://image.asoheikeji.com/15317181441611.jpg" alt></p>
+<h4 id="4-2-2，王者荣耀段位的提升："><a href="#4-2-2，王者荣耀段位的提升：" class="headerlink" title="4.2.2，王者荣耀段位的提升："></a>4.2.2，王者荣耀段位的提升：</h4><p>　　段位的直接提升带来的不仅是个人能力的体现，也是对于用户游戏内个人操作把控技巧的展示铭牌；简单来说越是高阶的段位越是代表了用户的实力，这也能给予用户极大的征服感及游戏体验，也是大多数用户在moba类游戏中乐此不疲游戏的原因之一。<br><img src="http://image.asoheikeji.com/15317178137574.jpg" alt></p>
+<h4 id="4-2-3，王者荣耀的击杀数："><a href="#4-2-3，王者荣耀的击杀数：" class="headerlink" title="4.2.3，王者荣耀的击杀数："></a>4.2.3，王者荣耀的击杀数：</h4><p>　　击杀数主要体现在当前对局击杀及所有对局击杀中，当前对局中击杀越多，越是能在团队里面表现出极大的个人能力，更是在一定程度上成为整个对局过程中的“救世主”，给予用户玩家极大的“英雄成就感”，这也是游戏过程中会有人要求“被带躺”以及有玩家主动寻求“带躺”过程的原因。<br><img src="http://image.asoheikeji.com/15317181037738.jpg" alt></p>
+<h4 id="4-2-4，王者荣耀英雄熟练度："><a href="#4-2-4，王者荣耀英雄熟练度：" class="headerlink" title="4.2.4，王者荣耀英雄熟练度："></a>4.2.4，王者荣耀英雄熟练度：</h4><p>　　熟练度也同段位，如果说段位是整体实力的体现，那么英雄的熟练度就是玩家对于单个英雄实力的体现，部分用户玩家会专精或者想熟练掌控某个或者某类英雄，也就有了游戏中对于部分玩家自动标签的行为(例如游戏中对于自动标记此玩家擅长位置或英雄)等，而操作难度越高的英雄能带来的操控感个个人成就感则越是强烈。<br><img src="http://image.asoheikeji.com/15317180514130.jpg" alt></p>
+<h2 id="5，总结分析："><a href="#5，总结分析：" class="headerlink" title="5，总结分析："></a>5，总结分析：</h2><p>　　关于酬赏部分主要涉及的则是用户的“目标搭建与完成”刚过程，同时把握用户的心理需求，加以产品内与用户的相关互动来给予用户“荣耀”“惊喜”等。<br>　　同<a href="#jump">“内部触发简要说明”</a>的附加部分。</p>
+<h1 id="七、王者荣耀hook模型“投入”模块分析："><a href="#七、王者荣耀hook模型“投入”模块分析：" class="headerlink" title="七、王者荣耀hook模型“投入”模块分析："></a>七、王者荣耀hook模型“投入”模块分析：</h1><h2 id="1，简略分析：-2"><a href="#1，简略分析：-2" class="headerlink" title="1，简略分析："></a>1，简略分析：</h2><p>　　用户对于产品本身的认可，对于玩法的喜爱，对于产品所能带给自身价值的衡量。<br><img src="http://image.asoheikeji.com/15317285441440.jpg" alt><br>　　<br>　　行动上渐渐频繁，行为上渐渐习惯；每日登陆签到，每日对局首胜，每周尝试新的限免英雄等等。</p>
+<h2 id="2，改变态度："><a href="#2，改变态度：" class="headerlink" title="2，改变态度："></a>2，改变态度：</h2><h3 id="2-1，简略分析：-2"><a href="#2-1，简略分析：-2" class="headerlink" title="2.1，简略分析："></a>2.1，简略分析：</h3><p>　　用户的直观性认可，带来的直接性的结果就是用户态度的改变，例如起先认为王者是个小学生的娱乐场，或者是low B游戏；<br>　　但是通过关于王者信息的堆积(内部外部的触发)，开始想了解及开始下载玩玩着(产生行动)，并且在游戏中获得了愉悦的体验(获得了”多变的酬赏)后，开始主动性继续体验使用，或者说开始“沉迷”以及“认可”；<br>　　同时也开始对外部进行“分享”，对于产品内部花更多时间精力挖掘玩法，以及对于产品商业角度的贡献(付费)等。</p>
+<h3 id="2-2，针对王者荣耀的举例："><a href="#2-2，针对王者荣耀的举例：" class="headerlink" title="2.2，针对王者荣耀的举例："></a>2.2，针对王者荣耀的举例：</h3><h4 id="2-2-1，从被动体验到主动习惯："><a href="#2-2-1，从被动体验到主动习惯：" class="headerlink" title="2.2.1，从被动体验到主动习惯："></a>2.2.1，从被动体验到主动习惯：</h4><p>　　从最开始被动被邀约“匹配赛”及“排位赛”，到后续转变的主动变为邀请者，开始接受王者带给自己的各项满足感。</p>
+<h4 id="2-2-2，从被动接受到主动接纳："><a href="#2-2-2，从被动接受到主动接纳：" class="headerlink" title="2.2.2，从被动接受到主动接纳："></a>2.2.2，从被动接受到主动接纳：</h4><p>　　例如LOL玩家对于王者最初的摒弃，认为是moba游戏中的垃圾，但后续了解甚至时间精力的付出上超过了原本的LOL等。</p>
+<h4 id="2-2-3，从玩法的单一到多变："><a href="#2-2-3，从玩法的单一到多变：" class="headerlink" title="2.2.3，从玩法的单一到多变："></a>2.2.3，从玩法的单一到多变：</h4><p>　　从最初的“亚瑟”及“后羿”等的单一英雄玩法，到开始挖掘其他英雄的价值，了解装备的搭配，技能加点等。</p>
+<h2 id="3，点滴投入："><a href="#3，点滴投入：" class="headerlink" title="3，点滴投入："></a>3，点滴投入：</h2><h3 id="3-1，简略分析：-2"><a href="#3-1，简略分析：-2" class="headerlink" title="3.1，简略分析："></a>3.1，简略分析：</h3><p>　　把用户原有的行为方式接纳融合，使用户从“消费者”变成“生产者”(这里主要是形容用户行为变化，从被动变为主导及参与；例如反馈游戏的bug，分享玩法内容等）。<br><img src="http://image.asoheikeji.com/15317290579641.jpg" alt><br>　　下面是产品同时能回馈给用户的一部分价值，也是在用户“投入”过程中不断发酵形成更好的“回馈”：</p>
+<ul>
+<li>（1）储存价值。</li>
+<li>（2）内容。</li>
+<li>（3）数据资料。</li>
+<li>（4）关注者。</li>
+<li>（5）信誉。</li>
+<li>（6）技能。</li>
+</ul>
+<p>　　<strong>这里主要说下“技能”：</strong><br>　　王者荣耀用户的持续使用，对于用户来说王者基本已成为用户的一个“技能代表”，毕竟王者在moba游戏的基础上也是一颗社交类型的超级App，当大家谈到“游戏段位”及“英雄熟练度”等的时候，这些数据也就成为用户社交时的标签；<br>　　同时技能方面主要的表现形式则是用户的不断深入使用产品，在王者荣耀的体现上就是用户对于玩法的挖掘，英雄的了解等，这些会让用户在使用产品时更如鱼得水，获得“酬赏“更容易；<br>　　从产品留存及上瘾的角度来说，这就建立了核心竞争壁垒，用户对于王者荣耀的熟练度熟悉度越高，也就越是不会弃用王者去使用竞品，毕竟用户在此行动过程中所花的时间、金钱、精力成本都非常高，迁移使用的产品将会让用户被动舍弃掉已有的各类“酬赏”。</p>
+<h3 id="3-2，针对王者荣耀的举例："><a href="#3-2，针对王者荣耀的举例：" class="headerlink" title="3.2，针对王者荣耀的举例："></a>3.2，针对王者荣耀的举例：</h3><h4 id="3-2-1，用户对于英雄的了解度："><a href="#3-2-1，用户对于英雄的了解度：" class="headerlink" title="3.2.1，用户对于英雄的了解度："></a>3.2.1，用户对于英雄的了解度：</h4><p>　　例如英雄“亚瑟”，玩过LOL的玩家就知道这是根据“德玛西亚之力”的原型来制作的，同时加以了相关改动；熟知“德玛”的用户在使用王者时肯定能直接使用“亚瑟”，但是熟练度了解度操控性肯定是远不及已熟练的“德玛”的。</p>
+<h4 id="3-2-2，用户的段位高度："><a href="#3-2-2，用户的段位高度：" class="headerlink" title="3.2.2，用户的段位高度："></a>3.2.2，用户的段位高度：</h4><p>　　特别是有高段位的玩家，在心理程度上肯定只是想去维护段位，而不是舍弃，或者任其降低。</p>
+<h4 id="3-2-3，用户的道具获取度："><a href="#3-2-3，用户的道具获取度：" class="headerlink" title="3.2.3，用户的道具获取度："></a>3.2.3，用户的道具获取度：</h4><p>　　玩的越久，英雄和道具累积也就越多，如果迁移或者弃用，那么间接性前期的行动付出就接近“等于0”了，并且不会在此情况下继续获得已有满足的“酬赏”奖励了。</p>
+<h2 id="4，加载下一个触发："><a href="#4，加载下一个触发：" class="headerlink" title="4，加载下一个触发："></a>4，加载下一个触发：</h2><h3 id="4-1，简略分析：-1"><a href="#4-1，简略分析：-1" class="headerlink" title="4.1，简略分析："></a>4.1，简略分析：</h3><p>　　这里主要是已有用户的再次“触发”，也就是不断循环的过程中，用户习惯的养成机制。<br>　　例如用户卸载后玩家邀约的重装，继续对局等；<br>　　例如用户并没有在特定时期有玩王者的想法，但是看到其他人发送了王者的相关活动(例如“签到送英雄”，“玩对局积攒碎片兑特定英雄”等)，然后再次加入游戏“行动”中。<br><img src="http://image.asoheikeji.com/15317304154488.jpg" alt></p>
+
+            </div>
+            <hr>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            <div class="reprint">
+                <p>
+                    <span class="reprint-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="https://shellmonster.github.io" class="b-link-green">GeekASO</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/ge-ren-xue-xi/fen-xi-wang-zhe-rong-yao-hook-shang-yin-mo-xing.html" class="b-link-green">【增长黑客】分析王者荣耀的Hook模型</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '4f9ade43ff76d6b5eafa',
+        clientSecret: '7a0966b7e3ee26d6b99c1dbbb50c34d51aad3d6a',
+        repo: 'ShellMonster.github.io',
+        owner: 'ShellMonster',
+        admin: ["ShellMonster"],
+        id: '2018-08-23T21-22-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/ge-ren-xue-xi/xiong-mao-xiao-ke-bi-ye-she-ji.html">
+                    <div class="card-image">
+                        
+                        <img src="http://image.asoheikeji.com/15343564859804.jpg" class="responsive-img" alt="【增长黑客】熊猫小课-毕业设计">
+                        
+                        <span class="card-title">【增长黑客】熊猫小课-毕业设计</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">熊猫小课-毕业设计
+一、描述P/MF状态：1，目前处于哪个状态：1.1，简略分析：1.1.1，课程内容丰富：　　熊猫小课属于在线教育类产品，主打碎片化的知识学习内容，包括“育儿”，“时间管理”，“工作技能”等等各方面；
+1.1.2，学习时间</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-09-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/个人学习/" class="post-category" target="_blank">
+                                    个人学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hook/" target="_blank">
+                        <span class="chip bg-color">hook</span>
+                    </a>
+                    
+                    <a href="/tags/上瘾模型/" target="_blank">
+                        <span class="chip bg-color">上瘾模型</span>
+                    </a>
+                    
+                    <a href="/tags/熊猫小课/" target="_blank">
+                        <span class="chip bg-color">熊猫小课</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/ge-ren-xue-xi/wei-yu-yin-bao-chan-pin-she-ji-bing-yan-zheng-mvp.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="【增长黑客】为语音包产品设计并验证MVP">
+                        
+                        <span class="card-title">【增长黑客】为语音包产品设计并验证MVP</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">为“语音包”产品设计并验证MVP一、确定目标用户:1，用户画像：1.1，整合数据：①，百度搜索情况：　　PC端搜索情况如下：
+　　移动端搜索情况如下：
+　　上方为“语音包”搜索后出现的结果，从圈点处基本可以看到，用户潜在的几个需求：　　a，</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-07-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/个人学习/" class="post-category" target="_blank">
+                                    个人学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/数据分析/" target="_blank">
+                        <span class="chip bg-color">数据分析</span>
+                    </a>
+                    
+                    <a href="/tags/mvp/" target="_blank">
+                        <span class="chip bg-color">mvp</span>
+                    </a>
+                    
+                    <a href="/tags/增长黑客/" target="_blank">
+                        <span class="chip bg-color">增长黑客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: GeekASO<br />'
+            + '作者: 道长@ASO黑科技<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">34.6k</span>
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ShellMonster" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1013373636@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1013373636" class="tooltipped" data-tooltip="QQ联系我: 1013373636" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
