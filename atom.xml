@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GeekASO</title>
+  
+  <subtitle>探索ASO的无限可能！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://shellmonster.github.io/"/>
+  <updated>2019-06-09T09:02:22.273Z</updated>
+  <id>https://shellmonster.github.io/</id>
+  
+  <author>
+    <name>道长@ASO黑科技</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Python监控微博用户发文，并进行钉钉推送</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/shi-yong-python-jian-kong-wei-bo-yong-hu-fa-wen-bing-jin-xing-ding-ding-tui-song.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/shi-yong-python-jian-kong-wei-bo-yong-hu-fa-wen-bing-jin-xing-ding-ding-tui-song.html</id>
+    <published>2019-06-09T05:22:00.000Z</published>
+    <updated>2019-06-09T09:02:22.273Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Python监控微博用户发文，并进行钉钉推送&quot;&gt;&lt;a href=&quot;#使用Python监控微博用户发文，并进行钉钉推送&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="python" scheme="https://shellmonster.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】- 分析商品生命周期，调整优化商品运营策略。</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-shang-pin-sheng-ming-zhou-qi-diao-zheng-you-hua-shang-pin-yun-ying-ce-lue.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-shang-pin-sheng-ming-zhou-qi-diao-zheng-you-hua-shang-pin-yun-ying-ce-lue.html</id>
+    <published>2019-04-11T18:37:00.000Z</published>
+    <updated>2019-04-11T18:50:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;【电商运营】-分析商品生命周期，调整优化商品运营策略。&quot;&gt;&lt;a href=&quot;#【电商运营】-分析商品生命周期，调整优化商品运营策略。&quot; class=&quot;headerlink&quot; title=&quot;【电商运营】-
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="淘宝店" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E5%BA%97/"/>
+    
+      <category term="商品分析" scheme="https://shellmonster.github.io/tags/%E5%95%86%E5%93%81%E5%88%86%E6%9E%90/"/>
+    
+      <category term="客服管理" scheme="https://shellmonster.github.io/tags/%E5%AE%A2%E6%9C%8D%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】- 分析店铺情况，调整优化店铺关联营销。</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-dian-pu-qing-kuang-diao-zheng-you-hua-dian-pu-guan-lian-ying-xiao.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-dian-pu-qing-kuang-diao-zheng-you-hua-dian-pu-guan-lian-ying-xiao.html</id>
+    <published>2019-04-07T14:37:00.000Z</published>
+    <updated>2019-04-08T19:13:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;【电商运营】-分析店铺情况，调整优化店铺关联营销。&quot;&gt;&lt;a href=&quot;#【电商运营】-分析店铺情况，调整优化店铺关联营销。&quot; class=&quot;headerlink&quot; title=&quot;【电商运营】- 分析店铺情况，调整优化店铺关联营销。&quot;&gt;&lt;/a&gt;【电商运营】-
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="淘宝店" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E5%BA%97/"/>
+    
+      <category term="客服管理" scheme="https://shellmonster.github.io/tags/%E5%AE%A2%E6%9C%8D%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="店铺分析" scheme="https://shellmonster.github.io/tags/%E5%BA%97%E9%93%BA%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】- 分析客服数据原因，及列出优化方案。</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-ke-fu-shu-ju-yuan-yin-ji-lie-chu-you-hua-fang-an.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-ke-fu-shu-ju-yuan-yin-ji-lie-chu-you-hua-fang-an.html</id>
+    <published>2019-04-07T09:25:00.000Z</published>
+    <updated>2019-04-07T11:07:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;【电商运营】-分析客服数据原因，及列出优化方案&quot;&gt;&lt;a href=&quot;#【电商运营】-分析客服数据原因，及列出优化方案&quot; class=&quot;headerlink&quot; title=&quot;【电商运营】- 分析客服数据原因，及列出优化方案&quot;&gt;&lt;/a&gt;【电商运营】-
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="运营策略" scheme="https://shellmonster.github.io/tags/%E8%BF%90%E8%90%A5%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="淘宝店" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E5%BA%97/"/>
+    
+      <category term="客服管理" scheme="https://shellmonster.github.io/tags/%E5%AE%A2%E6%9C%8D%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】店铺数据分析，运营策略优化。</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/dian-shang-dian-pu-shu-ju-fen-xi-ce-lue-you-hua.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/dian-shang-dian-pu-shu-ju-fen-xi-ce-lue-you-hua.html</id>
+    <published>2019-03-28T13:25:00.000Z</published>
+    <updated>2019-04-07T11:15:35.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;店铺数据分析，策略优化。&quot;&gt;&lt;a href=&quot;#店铺数据分析，策略优化。&quot; class=&quot;headerlink&quot; title=&quot;店铺数据分析，策略优化。&quot;&gt;&lt;/a&gt;店铺数据分析，策略优化。&lt;/h1&gt;&lt;h1 id=&quot;一、数据分析；&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="运营策略" scheme="https://shellmonster.github.io/tags/%E8%BF%90%E8%90%A5%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="淘宝店" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E5%BA%97/"/>
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="渠道选择" scheme="https://shellmonster.github.io/tags/%E6%B8%A0%E9%81%93%E9%80%89%E6%8B%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】分析手淘搜索、直通车、购物车、我的淘宝四个渠道流量特点！</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/tao-bao-4-lei-liu-liang-fen-xi.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/tao-bao-4-lei-liu-liang-fen-xi.html</id>
+    <published>2019-03-12T16:22:00.000Z</published>
+    <updated>2019-03-12T16:48:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;分析手淘搜索、直通车、购物车、我的淘宝四个渠道流量特点！&quot;&gt;&lt;a href=&quot;#分析手淘搜索、直通车、购物车、我的淘宝四个渠道流量特点！&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="手机淘宝" scheme="https://shellmonster.github.io/tags/%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D/"/>
+    
+      <category term="淘宝直通车" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E7%9B%B4%E9%80%9A%E8%BD%A6/"/>
+    
+      <category term="淘宝购物车" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E8%B4%AD%E7%89%A9%E8%BD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】根据店铺情况，分析店铺该采用什么运营策略！</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/e-commerce-operation.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/e-commerce-operation.html</id>
+    <published>2019-03-04T15:25:00.000Z</published>
+    <updated>2019-03-06T04:31:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;根据店铺情况，分析店铺该采用什么运营策略！&quot;&gt;&lt;a href=&quot;#根据店铺情况，分析店铺该采用什么运营策略！&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="电商运营" scheme="https://shellmonster.github.io/tags/%E7%94%B5%E5%95%86%E8%BF%90%E8%90%A5/"/>
+    
+      <category term="运营策略" scheme="https://shellmonster.github.io/tags/%E8%BF%90%E8%90%A5%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="网红策略" scheme="https://shellmonster.github.io/tags/%E7%BD%91%E7%BA%A2%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="活动策略" scheme="https://shellmonster.github.io/tags/%E6%B4%BB%E5%8A%A8%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="复购策略" scheme="https://shellmonster.github.io/tags/%E5%A4%8D%E8%B4%AD%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="上新策略" scheme="https://shellmonster.github.io/tags/%E4%B8%8A%E6%96%B0%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="爆款策略" scheme="https://shellmonster.github.io/tags/%E7%88%86%E6%AC%BE%E7%AD%96%E7%95%A5/"/>
+    
+      <category term="对标策略" scheme="https://shellmonster.github.io/tags/%E5%AF%B9%E6%A0%87%E7%AD%96%E7%95%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【增长黑客】抖音AARRR流量漏斗各项分析！</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/dou-yin-aarrr-liu-liang-lou-dou-fen-xi.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/dou-yin-aarrr-liu-liang-lou-dou-fen-xi.html</id>
+    <published>2019-03-03T13:25:00.000Z</published>
+    <updated>2019-03-11T15:17:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、抖音产品体验：&quot;&gt;&lt;a href=&quot;#一、抖音产品体验：&quot; class=&quot;headerlink&quot; title=&quot;一、抖音产品体验：&quot;&gt;&lt;/a&gt;一、抖音产品体验：&lt;/h1&gt;&lt;h2 id=&quot;1，抖音内部框架，产品体验输出：&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="抖音" scheme="https://shellmonster.github.io/tags/%E6%8A%96%E9%9F%B3/"/>
+    
+      <category term="AARRR" scheme="https://shellmonster.github.io/tags/AARRR/"/>
+    
+      <category term="产品框架图" scheme="https://shellmonster.github.io/tags/%E4%BA%A7%E5%93%81%E6%A1%86%E6%9E%B6%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【电商运营】电商运营-课前预习-专业词汇了解！</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/e-commerce-vocabulary.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/e-commerce-vocabulary.html</id>
+    <published>2019-03-03T13:25:00.000Z</published>
+    <updated>2019-03-11T15:05:24.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电商运营-课前预习-专业词汇了解&quot;&gt;&lt;a href=&quot;#电商运营-课前预习-专业词汇了解&quot; class=&quot;headerlink&quot; title=&quot;电商运营-课前预习-专业词汇了解&quot;&gt;&lt;/a&gt;电商运营-课前预习-专业词汇了解&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="电商运营" scheme="https://shellmonster.github.io/tags/%E7%94%B5%E5%95%86%E8%BF%90%E8%90%A5/"/>
+    
+      <category term="标品" scheme="https://shellmonster.github.io/tags/%E6%A0%87%E5%93%81/"/>
+    
+      <category term="非标品" scheme="https://shellmonster.github.io/tags/%E9%9D%9E%E6%A0%87%E5%93%81/"/>
+    
+      <category term="专营店" scheme="https://shellmonster.github.io/tags/%E4%B8%93%E8%90%A5%E5%BA%97/"/>
+    
+      <category term="专卖店" scheme="https://shellmonster.github.io/tags/%E4%B8%93%E5%8D%96%E5%BA%97/"/>
+    
+      <category term="旗舰店" scheme="https://shellmonster.github.io/tags/%E6%97%97%E8%88%B0%E5%BA%97/"/>
+    
+      <category term="集市店" scheme="https://shellmonster.github.io/tags/%E9%9B%86%E5%B8%82%E5%BA%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python】0218-淘宝客返利机器人源码及搭建教程公布!</title>
+    <link href="https://shellmonster.github.io/python/0218-taobaoke-python.html"/>
+    <id>https://shellmonster.github.io/python/0218-taobaoke-python.html</id>
+    <published>2019-02-18T09:22:00.000Z</published>
+    <updated>2019-03-05T08:09:03.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;0218-淘宝客返利机器人源码及搭建教程公布&quot;&gt;&lt;a href=&quot;#0218-淘宝客返利机器人源码及搭建教程公布&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://shellmonster.github.io/categories/Python/"/>
+    
+    
+      <category term="淘宝客" scheme="https://shellmonster.github.io/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/"/>
+    
+      <category term="机器人" scheme="https://shellmonster.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="微信机器人" scheme="https://shellmonster.github.io/tags/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="返利" scheme="https://shellmonster.github.io/tags/%E8%BF%94%E5%88%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Python】1221-爬取三节课课堂作业及评语并自动保存至表格。</title>
+    <link href="https://shellmonster.github.io/python/python-get-sanjieke.html"/>
+    <id>https://shellmonster.github.io/python/python-get-sanjieke.html</id>
+    <published>2018-12-21T08:38:00.000Z</published>
+    <updated>2019-03-05T08:10:41.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;【1221-每日Python】爬取三节课课堂作业及评语并自动保存至表格。&quot;&gt;&lt;a href=&quot;#【1221-每日Python】爬取三节课课堂作业及评语并自动保存至表格。&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://shellmonster.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://shellmonster.github.io/tags/Python/"/>
+    
+      <category term="三节课" scheme="https://shellmonster.github.io/tags/%E4%B8%89%E8%8A%82%E8%AF%BE/"/>
+    
+      <category term="爬虫" scheme="https://shellmonster.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【产品经理】设计一个发送优惠券的H5界面</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/she-ji-yi-ge-fa-song-you-hui-quan-de-h5-jie-mian.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/she-ji-yi-ge-fa-song-you-hui-quan-de-h5-jie-mian.html</id>
+    <published>2018-10-12T12:22:00.000Z</published>
+    <updated>2019-03-11T15:20:31.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;设计一个发送优惠券的H5界面-产品经理&quot;&gt;&lt;a href=&quot;#设计一个发送优惠券的H5界面-产品经理&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="产品经理" scheme="https://shellmonster.github.io/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+      <category term="原型图" scheme="https://shellmonster.github.io/tags/%E5%8E%9F%E5%9E%8B%E5%9B%BE/"/>
+    
+      <category term="流程图" scheme="https://shellmonster.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+    
+      <category term="需求文档" scheme="https://shellmonster.github.io/tags/%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【增长黑客】熊猫小课-毕业设计</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/xiong-mao-xiao-ke-bi-ye-she-ji.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/xiong-mao-xiao-ke-bi-ye-she-ji.html</id>
+    <published>2018-09-18T13:22:00.000Z</published>
+    <updated>2019-03-11T15:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;熊猫小课-毕业设计&quot;&gt;&lt;a href=&quot;#熊猫小课-毕业设计&quot; class=&quot;headerlink&quot; title=&quot;熊猫小课-毕业设计&quot;&gt;&lt;/a&gt;熊猫小课-毕业设计&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="hook" scheme="https://shellmonster.github.io/tags/hook/"/>
+    
+      <category term="上瘾模型" scheme="https://shellmonster.github.io/tags/%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="熊猫小课" scheme="https://shellmonster.github.io/tags/%E7%86%8A%E7%8C%AB%E5%B0%8F%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【增长黑客】分析王者荣耀的Hook模型</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-wang-zhe-rong-yao-hook-shang-yin-mo-xing.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/fen-xi-wang-zhe-rong-yao-hook-shang-yin-mo-xing.html</id>
+    <published>2018-08-23T13:22:00.000Z</published>
+    <updated>2019-03-11T15:20:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;分析王者荣耀的HOOK模型-增长课题&quot;&gt;&lt;a href=&quot;#分析王者荣耀的HOOK模型-增长课题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="hook" scheme="https://shellmonster.github.io/tags/hook/"/>
+    
+      <category term="上瘾模型" scheme="https://shellmonster.github.io/tags/%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="王者荣耀" scheme="https://shellmonster.github.io/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【增长黑客】为语音包产品设计并验证MVP</title>
+    <link href="https://shellmonster.github.io/ge-ren-xue-xi/wei-yu-yin-bao-chan-pin-she-ji-bing-yan-zheng-mvp.html"/>
+    <id>https://shellmonster.github.io/ge-ren-xue-xi/wei-yu-yin-bao-chan-pin-she-ji-bing-yan-zheng-mvp.html</id>
+    <published>2018-07-10T13:22:00.000Z</published>
+    <updated>2019-03-11T15:05:47.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;为“语音包”产品设计并验证MVP&quot;&gt;&lt;a href=&quot;#为“语音包”产品设计并验证MVP&quot; class=&quot;headerlink&quot; title=&quot;为“语音包”产品设计并验证MVP&quot;&gt;&lt;/a&gt;为“语音包”产品设计并验证MVP&lt;/h1&gt;&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="个人学习" scheme="https://shellmonster.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="数据分析" scheme="https://shellmonster.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+      <category term="mvp" scheme="https://shellmonster.github.io/tags/mvp/"/>
+    
+      <category term="增长黑客" scheme="https://shellmonster.github.io/tags/%E5%A2%9E%E9%95%BF%E9%BB%91%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎使用 MWeb</title>
+    <link href="https://shellmonster.github.io/qi-ta/huan-ying-shi-yong-mweb.html"/>
+    <id>https://shellmonster.github.io/qi-ta/huan-ying-shi-yong-mweb.html</id>
+    <published>2018-07-09T16:50:00.000Z</published>
+    <updated>2019-03-11T15:05:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;欢迎使用-MWeb&quot;&gt;&lt;a href=&quot;#欢迎使用-MWeb&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用 MWeb&quot;&gt;&lt;/a&gt;欢迎使用 MWeb&lt;/h1&gt;&lt;p&gt;MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持
+        
+      
+    
+    </summary>
+    
+      <category term="其他" scheme="https://shellmonster.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="Mweb" scheme="https://shellmonster.github.io/tags/Mweb/"/>
+    
+      <category term="Markdown" scheme="https://shellmonster.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
